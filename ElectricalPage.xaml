@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:SolarCarCoreUI;assembly=SolarCarCoreUI"
+             x:Class="SolarCarCoreUI.ElectricalPage"
+             Title="ElectricalPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                Text="Electrical Status"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label 
+                Text="Battery Status"
+                Style="{StaticResource SubHeadline}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="0.3*,0.7*">
+                <VerticalStackLayout>
+                    <HorizontalStackLayout Spacing="10">
+                        <Label FontSize="15" FontAttributes="Bold" Text="Capacity:" VerticalOptions="End" />
+                        <Label FontSize="15" Text="10V" VerticalOptions="End" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Spacing="10">
+                        <Label FontSize="15" FontAttributes="Bold" Text="Capacity:" VerticalOptions="End" />
+                        <Label FontSize="15" Text="10V" VerticalOptions="End" />
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Spacing="10">
+                        <Label FontSize="15" FontAttributes="Bold" Text="Capacity:" VerticalOptions="End" />
+                        <Label FontSize="15" Text="10V" VerticalOptions="End" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+                <microcharts:ChartView x:Name="BatteryChart"
+                   HeightRequest="200"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="Fill" 
+                   BackgroundColor="Transparent"
+                   Grid.Column="1"/>
+            </Grid>
+            
+            
+            <Label 
+                Text="Motor Status"
+                Style="{StaticResource SubHeadline}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                Text="Solar Status"
+                Style="{StaticResource SubHeadline}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

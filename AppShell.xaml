@@ -16,6 +16,11 @@
             Title="About"
             ContentTemplate="{DataTemplate local:HomePage}"
             Route="HomePage" />
+
+        <ShellContent
+            Title="Electrical"
+            ContentTemplate="{DataTemplate local:ElectricalPage}"
+            Route="ElectricalPage" />
     </TabBar>
     
 
