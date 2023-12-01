@@ -6,10 +6,17 @@
     xmlns:local="clr-namespace:SolarCarCoreUI"
     Shell.FlyoutBehavior="Disabled"
     Title="SolarCarCoreUI">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:HomePage}"
+            Route="HomePage" />
+    </TabBar>
+    
 
 </Shell>
