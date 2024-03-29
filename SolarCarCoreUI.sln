@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarCarCoreUI", "SolarCarCoreUI.csproj", "{3A824C88-0C1A-4C51-804B-E0B774691BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolarCarCoreUI", "SolarCarCoreUI.csproj", "{3A824C88-0C1A-4C51-804B-E0B774691BF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiSqlServerClassLibrary", "..\MauiSqlServerClassLibrary\MauiSqlServerClassLibrary.csproj", "{325530D8-80D1-4E7A-8812-0F42908159F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{3A824C88-0C1A-4C51-804B-E0B774691BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A824C88-0C1A-4C51-804B-E0B774691BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A824C88-0C1A-4C51-804B-E0B774691BF9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{325530D8-80D1-4E7A-8812-0F42908159F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{325530D8-80D1-4E7A-8812-0F42908159F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{325530D8-80D1-4E7A-8812-0F42908159F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{325530D8-80D1-4E7A-8812-0F42908159F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
